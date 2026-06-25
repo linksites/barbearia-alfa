@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Base ===== */
+:root {
+  color-scheme: dark;
+}
+
+html {
+  /* O scroll suave é controlado pelo Lenis; mantemos fallback nativo. */
+  scroll-behavior: smooth;
+}
+
+/* Quando o Lenis está ativo, ele assume o controle da rolagem. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: #0e0e0e;
+  color: #f0e6d2;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Tipografia display */
+.font-display {
+  letter-spacing: 0.01em;
+  line-height: 0.92;
+}
+
+/* Seleção de texto na cor da marca */
+::selection {
+  background: #c8602c;
+  color: #0e0e0e;
+}
+
+/* Foco visível e acessível em toda navegação por teclado */
+:focus-visible {
+  outline: 2px solid #c8602c;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Barra de rolagem discreta */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0e0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c5872;
+  border-radius: 999px;
+}
+
+/* ===== Acessibilidade: reduzir movimento ===== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
