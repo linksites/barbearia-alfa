@@ -1,6 +1,6 @@
-# Barbearia Alfa — Landing Page
+# Barbearia Alpha — Landing Page
 
-Landing page de página única da **Barbearia Alfa** (Belém-PA). Estilo, atitude e experiência completa — corte, barba e combo, com agendamento direto pelo WhatsApp.
+Landing page de página única da **Barbearia Alpha** (Belém-PA). Estilo, atitude e experiência completa — corte, barba e combo, com agendamento direto pelo WhatsApp.
 
 > Desenvolvido por **TECHLAB**.
 
@@ -26,7 +26,7 @@ npm run preview  # pré-visualiza o build
 
 Deploy automático para **GitHub Pages** a cada push na branch `main`, via GitHub Actions (`.github/workflows/deploy.yml`).
 
-Publicado em: https://linksites.github.io/barbearia-alfa/
+Publicado em: https://linksites.github.io/alpha/
 
 ## Imagens
 

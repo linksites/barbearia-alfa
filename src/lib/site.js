@@ -7,10 +7,10 @@ export const asset = (p) => `${BASE}${p.replace(/^\//, '')}`
 // ===== Dados centrais da marca (briefing) =====
 
 export const MARCA = {
-  nome: 'Barbearia Alfa',
+  nome: 'Barbearia Alpha',
   slogan: 'Chegou a nova era das barbearias',
   descricao:
-    'Na Barbearia Alfa, você encontra muito mais do que corte e barba. Aqui é estilo, atitude e experiência completa.',
+    'Na Barbearia Alpha, você encontra muito mais do que corte e barba. Aqui é estilo, atitude e experiência completa.',
   endereco: 'Rua António Everdosa, 633 — Belém-PA',
   enderecoMaps: 'Rua António Everdosa, 633, Belém-PA',
   telefone: '(91) 98536-7432',
@@ -18,7 +18,7 @@ export const MARCA = {
 
 // Link de WhatsApp com mensagem pronta (sem backend de agendamento).
 export const WHATSAPP_URL =
-  'https://wa.me/5591985367432?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Alfa.'
+  'https://wa.me/5591985367432?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Alpha.'
 
 /**
  * Inventário de imagens.
@@ -31,12 +31,12 @@ export const FOTOS = {
   hero: {
     src: null, // ex.: '/assets/hero.webp' — foto horizontal de alta resolução
     label: 'HERO · barbeiro em ação ou fachada/ambiente (horizontal)',
-    alt: 'Ambiente da Barbearia Alfa',
+    alt: 'Ambiente da Barbearia Alpha',
   },
   retrato: {
     src: asset('assets/barbearia_alpha.png'), // única foto disponível hoje
     label: 'RETRATO do profissional',
-    alt: 'Profissional da Barbearia Alfa',
+    alt: 'Profissional da Barbearia Alpha',
   },
   galeria: [
     { src: null, label: 'GALERIA 1 · corte finalizado', alt: 'Corte finalizado' },

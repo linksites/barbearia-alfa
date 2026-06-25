@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 // No build (GitHub Pages) servimos a partir do subcaminho do repositório;
 // no dev local mantemos a raiz "/".
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/barbearia-alfa/' : '/',
+  base: command === 'build' ? '/alpha/' : '/',
   plugins: [react()],
 }))
