@@ -74,4 +74,14 @@ body {
     transition-duration: 0.001ms !important;
     scroll-behavior: auto !important;
   }
+
+  /* Exceção: o letreiro (marquee) é um movimento contínuo, horizontal e
+     previsível — efeito de marca desejado. Mantemos sua rolagem mesmo com
+     "reduzir movimento", apenas um pouco mais lenta. */
+  .animate-marquee {
+    animation-name: marquee !important;
+    animation-duration: 34s !important;
+    animation-timing-function: linear !important;
+    animation-iteration-count: infinite !important;
+  }
 }

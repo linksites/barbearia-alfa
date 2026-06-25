@@ -35,13 +35,24 @@ const FAIXA = [
 export default function Diferenciais() {
   return (
     <section className="relative border-y border-creme/10 py-20 md:py-28">
-      {/* Marquee */}
-      <div className="relative mb-16 flex overflow-hidden select-none">
+      {/* Marquee — letreiro em rolagem contínua, com as palavras surgindo e
+          sumindo suavemente nas bordas (máscara em gradiente). Decorativo:
+          aria-hidden para não poluir leitores de tela. */}
+      <div
+        aria-hidden="true"
+        className="relative mb-16 flex overflow-hidden select-none"
+        style={{
+          maskImage:
+            'linear-gradient(to right, transparent, #000 10%, #000 90%, transparent)',
+          WebkitMaskImage:
+            'linear-gradient(to right, transparent, #000 10%, #000 90%, transparent)',
+        }}
+      >
         <div className="flex shrink-0 animate-marquee items-center gap-8 pr-8">
           {[...FAIXA, ...FAIXA].map((t, i) => (
             <span
               key={i}
-              className="font-display text-4xl uppercase text-creme/15 md:text-6xl"
+              className="font-display text-4xl uppercase text-creme/20 md:text-6xl"
             >
               {t}
               <span className="mx-8 text-terracota">/</span>
