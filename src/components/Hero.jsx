@@ -34,6 +34,7 @@ export default function Hero() {
               label: 'HERO · barbeiro em ação ou fachada/ambiente (horizontal)',
               alt: 'Ambiente da Barbearia Alpha',
             }}
+            showLabel={false}
             className="h-full w-full"
             imgClassName="h-full w-full object-cover"
           />
