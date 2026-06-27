@@ -1,5 +1,5 @@
-import { FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa'
-import { MARCA, WHATSAPP_URL, LOGO } from '../lib/site'
+import { FaWhatsapp, FaMapMarkerAlt, FaInstagram } from 'react-icons/fa'
+import { MARCA, WHATSAPP_URL, LOGO, INSTAGRAM_URL, INSTAGRAM_HANDLE } from '../lib/site'
 
 /**
  * Footer: nome, endereço, telefone e ano atual.
@@ -40,6 +40,17 @@ export default function Footer() {
             >
               <FaWhatsapp className="text-terracota" aria-hidden="true" />
               {MARCA.telefone}
+            </a>
+          </li>
+          <li>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener"
+              className="flex items-center gap-3 hover:text-terracota"
+            >
+              <FaInstagram className="text-terracota" aria-hidden="true" />
+              {INSTAGRAM_HANDLE}
             </a>
           </li>
         </ul>

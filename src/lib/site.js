@@ -23,6 +23,10 @@ export const LOGO = asset('assets/logo-alfa.jpg')
 export const WHATSAPP_URL =
   'https://wa.me/5591985367432?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Alfa.'
 
+// Instagram oficial da barbearia.
+export const INSTAGRAM_URL = 'https://www.instagram.com/barbearia__alfa'
+export const INSTAGRAM_HANDLE = '@barbearia__alfa'
+
 /**
  * Inventário de imagens.
  *

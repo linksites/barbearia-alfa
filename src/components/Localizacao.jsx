@@ -1,6 +1,6 @@
-import { FaMapMarkerAlt, FaWhatsapp, FaClock } from 'react-icons/fa'
+import { FaMapMarkerAlt, FaWhatsapp, FaClock, FaInstagram } from 'react-icons/fa'
 import Button from './ui/Button'
-import { MARCA } from '../lib/site'
+import { MARCA, INSTAGRAM_URL, INSTAGRAM_HANDLE } from '../lib/site'
 
 /**
  * Localização: endereço por extenso + mapa do Google Maps incorporado.
@@ -44,6 +44,17 @@ export default function Localizacao() {
             <li className="flex items-start gap-3">
               <FaClock className="mt-1 text-terracota" aria-hidden="true" />
               <span>Seg a Sáb · horários sob agendamento</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <FaInstagram className="mt-1 text-terracota" aria-hidden="true" />
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noopener"
+                className="hover:text-terracota"
+              >
+                {INSTAGRAM_HANDLE}
+              </a>
             </li>
           </ul>
 
