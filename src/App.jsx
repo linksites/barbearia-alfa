@@ -5,7 +5,8 @@ import Hero from './components/Hero'
 import Diferenciais from './components/Diferenciais'
 import Servicos from './components/Servicos'
 import Sobre from './components/Sobre'
-import Galeria from './components/Galeria'
+import Videos from './components/Videos'
+import Promocoes from './components/Promocoes'
 import Localizacao from './components/Localizacao'
 import CTAFinal from './components/CTAFinal'
 import Footer from './components/Footer'
@@ -23,7 +24,8 @@ export default function App() {
         <Diferenciais />
         <Servicos />
         <Sobre />
-        <Galeria />
+        <Videos />
+        <Promocoes />
         <Localizacao />
         <CTAFinal />
       </main>

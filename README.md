@@ -1,6 +1,6 @@
-# Barbearia Alpha — Landing Page
+# Barbearia Alfa — Landing Page
 
-Landing page de página única da **Barbearia Alpha** (Belém-PA). Estilo, atitude e experiência completa — corte, barba e combo, com agendamento direto pelo WhatsApp.
+Landing page de página única da **Barbearia Alfa** (Belém-PA). Estilo, atitude e experiência completa — corte, barba e combo, com agendamento direto pelo WhatsApp.
 
 > Desenvolvido por **TECHLAB**.
 

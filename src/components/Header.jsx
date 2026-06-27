@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaWhatsapp } from 'react-icons/fa'
 import { HiMenu, HiX } from 'react-icons/hi'
-import { MARCA, WHATSAPP_URL } from '../lib/site'
+import { MARCA, WHATSAPP_URL, LOGO } from '../lib/site'
 
 const LINKS = [
   { href: '#servicos', label: 'Serviços' },
   { href: '#sobre', label: 'Sobre' },
-  { href: '#galeria', label: 'Galeria' },
+  { href: '#videos', label: 'Vídeos' },
+  { href: '#promocoes', label: 'Promoções' },
   { href: '#localizacao', label: 'Localização' },
 ]
 
@@ -39,13 +40,17 @@ export default function Header() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
         {/* Logo */}
-        <a
-          href="#topo"
-          className="font-display text-2xl uppercase tracking-wide text-creme"
-        >
-          {MARCA.nome.split(' ')[0]}
-          <span className="text-terracota">.</span>
-          <span className="text-creme/70">{MARCA.nome.split(' ')[1]}</span>
+        <a href="#topo" className="flex items-center gap-3">
+          <img
+            src={LOGO}
+            alt={MARCA.nome}
+            className="h-11 w-11 rounded-full object-cover md:h-12 md:w-12"
+          />
+          <span className="hidden font-display text-2xl uppercase tracking-wide text-creme sm:inline">
+            {MARCA.nome.split(' ')[0]}
+            <span className="text-terracota">.</span>
+            <span className="text-creme/70">{MARCA.nome.split(' ')[1]}</span>
+          </span>
         </a>
 
         {/* Menu desktop */}
