@@ -37,7 +37,7 @@ export const FOTOS = {
     alt: 'Ambiente da Barbearia Alfa',
   },
   retrato: {
-    src: asset('assets/barbearia_alpha.png'), // única foto disponível hoje
+    src: asset('assets/barbearia_alfa.png'), // única foto disponível hoje
     label: 'RETRATO do profissional',
     alt: 'Profissional da Barbearia Alfa',
   },

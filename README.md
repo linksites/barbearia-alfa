@@ -26,7 +26,7 @@ npm run preview  # pré-visualiza o build
 
 Deploy automático para **GitHub Pages** a cada push na branch `main`, via GitHub Actions (`.github/workflows/deploy.yml`).
 
-Publicado em: https://linksites.github.io/alpha/
+Publicado em: https://linksites.github.io/alfa/
 
 ## Imagens
 
