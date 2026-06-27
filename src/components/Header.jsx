@@ -46,7 +46,7 @@ export default function Header() {
             alt={MARCA.nome}
             className="h-11 w-11 rounded-full object-cover md:h-12 md:w-12"
           />
-          <span className="hidden font-display text-2xl uppercase tracking-wide text-creme sm:inline">
+          <span className="font-display text-xl uppercase tracking-wide text-creme md:text-2xl">
             {MARCA.nome.split(' ')[0]}
             <span className="text-terracota">.</span>
             <span className="text-creme/70">{MARCA.nome.split(' ')[1]}</span>
