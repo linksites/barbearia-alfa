@@ -47,3 +47,52 @@ export const FOTOS = {
     { src: null, label: 'GALERIA 6 · corte/estilo', alt: 'Corte e estilo' },
   ],
 }
+
+/**
+ * Inventário de vídeos (Reels verticais 9:16).
+ *
+ * Cada clipe tem MP4 (H.264, compatível com todos os navegadores) e WebM (VP9,
+ * menor) como fontes, mais um `poster` (1º frame) que aparece antes do play e
+ * garante um LCP rápido. Todos são mudos e tocam em loop quando entram na tela.
+ *
+ * Para adicionar/trocar clipes, basta colocar os arquivos em
+ * /public/assets/videos/ e registrar aqui — a seção e o lightbox se ajustam
+ * automaticamente à quantidade.
+ */
+export const VIDEOS = [
+  {
+    mp4: asset('assets/videos/reel-1.mp4'),
+    webm: asset('assets/videos/reel-1.webm'),
+    poster: asset('assets/videos/reel-1.jpg'),
+    titulo: 'Padrão Alpha',
+    alt: 'Vídeo do atendimento na Barbearia Alpha',
+  },
+  {
+    mp4: asset('assets/videos/reel-2.mp4'),
+    webm: asset('assets/videos/reel-2.webm'),
+    poster: asset('assets/videos/reel-2.jpg'),
+    titulo: 'Corte & estilo',
+    alt: 'Vídeo de corte e estilo na Barbearia Alpha',
+  },
+  {
+    mp4: asset('assets/videos/reel-3.mp4'),
+    webm: asset('assets/videos/reel-3.webm'),
+    poster: asset('assets/videos/reel-3.jpg'),
+    titulo: 'Na cadeira',
+    alt: 'Vídeo do ambiente da Barbearia Alpha',
+  },
+  {
+    mp4: asset('assets/videos/reel-4.mp4'),
+    webm: asset('assets/videos/reel-4.webm'),
+    poster: asset('assets/videos/reel-4.jpg'),
+    titulo: 'Detalhe da barba',
+    alt: 'Vídeo de barba na Barbearia Alpha',
+  },
+  {
+    mp4: asset('assets/videos/reel-5.mp4'),
+    webm: asset('assets/videos/reel-5.webm'),
+    poster: asset('assets/videos/reel-5.jpg'),
+    titulo: 'Experiência completa',
+    alt: 'Vídeo da experiência Padrão Alpha',
+  },
+]

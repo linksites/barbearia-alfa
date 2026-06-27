@@ -7,7 +7,7 @@ import { MARCA, WHATSAPP_URL } from '../lib/site'
 const LINKS = [
   { href: '#servicos', label: 'Serviços' },
   { href: '#sobre', label: 'Sobre' },
-  { href: '#galeria', label: 'Galeria' },
+  { href: '#videos', label: 'Vídeos' },
   { href: '#localizacao', label: 'Localização' },
 ]
 
