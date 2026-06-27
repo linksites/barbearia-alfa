@@ -21,7 +21,7 @@ const SERVICOS = [
   {
     icon: GiRazor,
     nome: 'Combo',
-    desc: 'Corte + barba: a experiência completa Padrão Alpha.',
+    desc: 'Corte + barba: a experiência completa Padrão Alfa.',
     preco: 'a partir de R$ —',
   },
 ]

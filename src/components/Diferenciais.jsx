@@ -3,7 +3,7 @@ import { FaRegGem, FaCouch, FaUserTie } from 'react-icons/fa'
 const ITENS = [
   {
     icon: FaRegGem,
-    titulo: 'Atendimento Padrão Alpha',
+    titulo: 'Atendimento Padrão Alfa',
     texto: 'Cada cliente tratado como prioridade, do café à navalha.',
   },
   {
@@ -25,7 +25,7 @@ const FAIXA = [
   'EXPERIÊNCIA',
   'PRECISÃO',
   'CONFIANÇA',
-  'PADRÃO ALPHA',
+  'PADRÃO ALFA',
 ]
 
 /**

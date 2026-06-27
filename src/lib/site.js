@@ -7,18 +7,21 @@ export const asset = (p) => `${BASE}${p.replace(/^\//, '')}`
 // ===== Dados centrais da marca (briefing) =====
 
 export const MARCA = {
-  nome: 'Barbearia Alpha',
+  nome: 'Barbearia Alfa',
   slogan: 'Chegou a nova era das barbearias',
   descricao:
-    'Na Barbearia Alpha, você encontra muito mais do que corte e barba. Aqui é estilo, atitude e experiência completa.',
+    'Na Barbearia Alfa, você encontra muito mais do que corte e barba. Aqui é estilo, atitude e experiência completa.',
   endereco: 'Rua António Everdosa, 633 — Belém-PA',
   enderecoMaps: 'Rua António Everdosa, 633, Belém-PA',
   telefone: '(91) 98536-7432',
 }
 
+// Logo oficial (emblema) da barbearia.
+export const LOGO = asset('assets/logo-alfa.jpg')
+
 // Link de WhatsApp com mensagem pronta (sem backend de agendamento).
 export const WHATSAPP_URL =
-  'https://wa.me/5591985367432?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Alpha.'
+  'https://wa.me/5591985367432?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio%20na%20Barbearia%20Alfa.'
 
 /**
  * Inventário de imagens.
@@ -31,12 +34,12 @@ export const FOTOS = {
   hero: {
     src: null, // ex.: '/assets/hero.webp' — foto horizontal de alta resolução
     label: 'HERO · barbeiro em ação ou fachada/ambiente (horizontal)',
-    alt: 'Ambiente da Barbearia Alpha',
+    alt: 'Ambiente da Barbearia Alfa',
   },
   retrato: {
     src: asset('assets/barbearia_alpha.png'), // única foto disponível hoje
     label: 'RETRATO do profissional',
-    alt: 'Profissional da Barbearia Alpha',
+    alt: 'Profissional da Barbearia Alfa',
   },
   galeria: [
     { src: null, label: 'GALERIA 1 · corte finalizado', alt: 'Corte finalizado' },
@@ -64,35 +67,50 @@ export const VIDEOS = [
     mp4: asset('assets/videos/reel-1.mp4'),
     webm: asset('assets/videos/reel-1.webm'),
     poster: asset('assets/videos/reel-1.jpg'),
-    titulo: 'Padrão Alpha',
-    alt: 'Vídeo do atendimento na Barbearia Alpha',
+    titulo: 'Padrão Alfa',
+    alt: 'Vídeo do atendimento na Barbearia Alfa',
   },
   {
     mp4: asset('assets/videos/reel-2.mp4'),
     webm: asset('assets/videos/reel-2.webm'),
     poster: asset('assets/videos/reel-2.jpg'),
     titulo: 'Corte & estilo',
-    alt: 'Vídeo de corte e estilo na Barbearia Alpha',
+    alt: 'Vídeo de corte e estilo na Barbearia Alfa',
   },
   {
     mp4: asset('assets/videos/reel-3.mp4'),
     webm: asset('assets/videos/reel-3.webm'),
     poster: asset('assets/videos/reel-3.jpg'),
     titulo: 'Na cadeira',
-    alt: 'Vídeo do ambiente da Barbearia Alpha',
+    alt: 'Vídeo do ambiente da Barbearia Alfa',
   },
   {
     mp4: asset('assets/videos/reel-4.mp4'),
     webm: asset('assets/videos/reel-4.webm'),
     poster: asset('assets/videos/reel-4.jpg'),
     titulo: 'Detalhe da barba',
-    alt: 'Vídeo de barba na Barbearia Alpha',
+    alt: 'Vídeo de barba na Barbearia Alfa',
   },
   {
     mp4: asset('assets/videos/reel-5.mp4'),
     webm: asset('assets/videos/reel-5.webm'),
     poster: asset('assets/videos/reel-5.jpg'),
     titulo: 'Experiência completa',
-    alt: 'Vídeo da experiência Padrão Alpha',
+    alt: 'Vídeo da experiência Padrão Alfa',
+  },
+]
+
+/**
+ * Artes promocionais (posts prontos, formato 9:16). Cada card abre o WhatsApp.
+ * Para adicionar/trocar, coloque a imagem em /public/assets/ e registre aqui.
+ */
+export const PROMOS = [
+  {
+    src: asset('assets/promo-sexta.jpg'),
+    alt: 'Sexta é dia de ficar na régua — agende seu horário',
+  },
+  {
+    src: asset('assets/promo-espera.jpg'),
+    alt: 'Estamos esperando por você — agende seu horário',
   },
 ]

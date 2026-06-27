@@ -32,7 +32,7 @@ export default function Hero() {
             foto={{
               src: null,
               label: 'HERO · barbeiro em ação ou fachada/ambiente (horizontal)',
-              alt: 'Ambiente da Barbearia Alpha',
+              alt: 'Ambiente da Barbearia Alfa',
             }}
             showLabel={false}
             className="h-full w-full"
