@@ -12,8 +12,8 @@ export default function Hero() {
   const fotoRef = useRef(null)
   const palavrasRef = useRef([])
 
-  // Quebra o slogan em palavras para o efeito stagger.
-  const palavras = MARCA.slogan.split(' ')
+  // Nome da marca em duas linhas (BARBEARIA / ALFA) para o título do hero.
+  const marca = MARCA.nome.split(' ')
 
   // Primeiro reel serve de fundo atmosférico do hero.
   const fundo = VIDEOS[0]
@@ -70,17 +70,24 @@ export default function Hero() {
           {MARCA.endereco}
         </p>
 
-        <h1 className="font-display text-[clamp(2.75rem,9vw,8rem)] uppercase text-creme">
-          {palavras.map((p, i) => (
-            <span key={i} className="inline-block overflow-hidden align-bottom">
-              <span
-                ref={(el) => (palavrasRef.current[i] = el)}
-                className="mr-[0.25em] inline-block"
-              >
-                {p}
-              </span>
+        <h1 className="font-display text-[clamp(3rem,12vw,9rem)] uppercase leading-[0.85] text-creme">
+          <span className="block overflow-hidden">
+            <span
+              ref={(el) => (palavrasRef.current[0] = el)}
+              className="inline-block"
+            >
+              {marca[0]}
+              <span className="text-terracota">.</span>
             </span>
-          ))}
+          </span>
+          <span className="block overflow-hidden">
+            <span
+              ref={(el) => (palavrasRef.current[1] = el)}
+              className="inline-block text-terracota"
+            >
+              {marca[1]}
+            </span>
+          </span>
         </h1>
 
         <p className="mt-6 max-w-xl text-base leading-relaxed text-creme/80 md:text-lg">
