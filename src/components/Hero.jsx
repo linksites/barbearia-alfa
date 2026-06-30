@@ -19,12 +19,6 @@ export default function Hero() {
   // Primeiro reel serve de fundo atmosférico do hero.
   const fundo = VIDEOS[0]
 
-  // Respeita "prefers-reduced-motion": sem reduzido o reel toca; com reduzido
-  // o vídeo fica parado no poster.
-  const prefersReduced =
-    typeof window !== 'undefined' &&
-    window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
   useEffect(() => {
     parallax(fotoRef.current, { amount: 140 })
     staggerIn(palavrasRef.current, { stagger: 0.12, y: 50, delay: 0.2 })
@@ -41,7 +35,7 @@ export default function Hero() {
           <video
             className="h-full w-full object-cover"
             poster={fundo.poster}
-            autoPlay={!prefersReduced}
+            autoPlay
             muted
             loop
             playsInline
