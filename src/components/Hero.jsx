@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { FaClock, FaMapMarkerAlt, FaWhatsapp } from 'react-icons/fa'
 import Button from './ui/Button'
 import { MARCA, LOGO, VIDEOS } from '../lib/site'
 import { parallax, staggerIn } from '../lib/animations'
@@ -18,6 +19,12 @@ export default function Hero() {
   // Primeiro reel serve de fundo atmosférico do hero.
   const fundo = VIDEOS[0]
 
+  // Respeita "prefers-reduced-motion": sem reduzido o reel toca; com reduzido
+  // o vídeo fica parado no poster.
+  const prefersReduced =
+    typeof window !== 'undefined' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
   useEffect(() => {
     parallax(fotoRef.current, { amount: 140 })
     staggerIn(palavrasRef.current, { stagger: 0.12, y: 50, delay: 0.2 })
@@ -34,7 +41,7 @@ export default function Hero() {
           <video
             className="h-full w-full object-cover"
             poster={fundo.poster}
-            autoPlay
+            autoPlay={!prefersReduced}
             muted
             loop
             playsInline
@@ -97,6 +104,23 @@ export default function Hero() {
         <div className="mt-9">
           <Button className="text-base md:text-lg">Agendar pelo WhatsApp</Button>
         </div>
+
+        {/* Selos de confiança */}
+        <ul className="mt-8 flex flex-wrap gap-2">
+          {[
+            { icon: FaClock, texto: 'Seg a Sáb' },
+            { icon: FaMapMarkerAlt, texto: 'Belém-PA' },
+            { icon: FaWhatsapp, texto: 'Resposta rápida no WhatsApp' },
+          ].map(({ icon: Icon, texto }) => (
+            <li
+              key={texto}
+              className="flex items-center gap-2 rounded-full border border-creme/15 px-3 py-1.5 text-xs text-creme/75"
+            >
+              <Icon className="text-terracota" aria-hidden="true" />
+              {texto}
+            </li>
+          ))}
+        </ul>
       </div>
 
       {/* Indicador de scroll */}
